@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: KafkaStreams
+    cloud:
+        stream:
+            bindings:
+                input:
+                    destination: words
+                output:
+                    destination: counts
+            kafka:
+                binder:
+                    brokers: localhost:9092
